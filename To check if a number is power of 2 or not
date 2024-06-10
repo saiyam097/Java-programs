@@ -1,0 +1,19 @@
+import java.util.*;
+class power {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number");
+        int n = sc.nextInt();
+        int x = n * n - 1;
+       int bm1=1<<1;
+       int bm2=1<<2;
+       if((bm1&x)==0 && (bm2&x)==0)
+       {
+           System.out.println("The number is not  a power");
+       }
+       else {
+           System.out.println("The number is a power");
+       }
+
+    }
+}
